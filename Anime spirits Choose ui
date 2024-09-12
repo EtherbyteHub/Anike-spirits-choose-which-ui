@@ -1,0 +1,28 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Anime spirits Choose Ui", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+
+local Tab = Window:MakeTab({
+	Name = "choose ui",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "old ui (OrionLib)!",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EtherbyteHub/Anime-Spirits-script-/main/Anime%20spirits%20script",true))()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "new ui",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/omega24119/New-lib-anime-spirirt/main/Hola%20victim",true))()
+      		print("button pressed")
+  	end    
+})
+
+
